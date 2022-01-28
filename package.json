@@ -1,0 +1,26 @@
+{
+  "name": "persian-sports-site",
+  "version": "2.0.0",
+  "description": "this is update for sports site",
+  "main": "index.js",
+  "scripts": {
+    "watch:sass": "node-sass sass/main.scss dist/style.css -w",
+    "compile:sass": "node-sass sass/main.scss dist/style.comp.css",
+    "compress:css": "node-sass dist/style.comp.css dist/style.css --output-style compressed",
+    "build:css": "npm-run-all compile:sass compress:css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/farazmrx/Persian-sports-site.git"
+  },
+  "author": "faraz vaissi",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/farazmrx/Persian-sports-site/issues"
+  },
+  "homepage": "https://github.com/farazmrx/Persian-sports-site#readme",
+  "devDependencies": {
+    "node-sass": "^7.0.1",
+    "npm-run-all": "^4.1.5"
+  }
+}
