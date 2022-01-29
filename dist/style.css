@@ -1,4 +1,36 @@
 @charset "UTF-8";
+@keyframes wink {
+  0% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
+
+* {
+  margin: 0;
+  padding: 0; }
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit; }
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%; }
+
+body {
+  font-family: 'vazir'; }
+
+ul, li {
+  list-style: none; }
+
+a {
+  text-decoration: none; }
+
+.container {
+  width: 108rem;
+  margin: auto; }
+
 @font-face {
   font-family: Vazir;
   src: url("../fonts/vazir/Vazir-Regular.eot");
@@ -40,6 +72,69 @@
   src: url("../fonts/vazir/Vazir-Thin.woff2") format("woff2"), url("../fonts/vazir/Vazir-Thin.woff") format("woff"), url("../fonts/vazir/Vazir-Thin.ttf") format("truetype");
   font-weight: 100;
   font-style: normal; }
+
+.header {
+  background-image: url(../pic/hero.jpg);
+  max-width: 100vw;
+  height: 91rem;
+  background-size: cover;
+  padding-top: 4rem;
+  position: relative; }
+  .header__menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center; }
+  .header__list {
+    display: flex; }
+  .header__item:not(:last-child) {
+    margin-right: 3rem; }
+  .header__item:not(:first-child) {
+    overflow: hidden; }
+  .header__link {
+    color: #fff;
+    font-size: 1.6rem;
+    position: relative; }
+    .header__link::before {
+      content: "";
+      position: absolute;
+      width: 100%;
+      height: 3px;
+      bottom: 0;
+      left: 100%;
+      background-color: #00A8FF;
+      transition: left .5s; }
+    .header__link:hover::before {
+      left: 0; }
+    .header__link--btn {
+      background-color: #00A8FF;
+      padding: 1.1rem 3rem;
+      border-radius: 5px;
+      color: #fff;
+      font-size: 1.6rem; }
+  .header__slogan {
+    position: absolute;
+    text-align: center;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff; }
+    .header__slogan-sub {
+      font-size: 2rem;
+      font-weight: 300;
+      margin-bottom: .5rem; }
+    .header__slogan-main {
+      font-size: 4rem;
+      position: relative; }
+      .header__slogan-main::after {
+        content: "";
+        position: absolute;
+        left: -.8rem;
+        top: 0;
+        width: 5px;
+        height: 90%;
+        background-color: #00A8FF;
+        animation: wink .5s infinite;
+        animation-direction: alternate-reverse; }
 
 /*!
  *  Font Awesome 4.7.0 by @davegandy - http://fontawesome.io - @fontawesome
