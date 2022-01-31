@@ -216,6 +216,69 @@ a {
         background-color: #00A8FF;
         color: #fff; }
 
+.price {
+  background-image: url(../pic/price.jpg);
+  background-size: cover;
+  background-position: center;
+  padding: 7rem 0 10rem 0; }
+  .price__header {
+    text-align: center;
+    margin-bottom: 5rem;
+    color: #fff; }
+    .price__header-main {
+      font-size: 4rem;
+      font-weight: 800;
+      letter-spacing: 1px; }
+    .price__header-sub {
+      font-size: 2rem;
+      word-spacing: 2px; }
+  .price__boxes {
+    display: flex;
+    height: 30rem; }
+  .price__bluebox {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #00A8FF;
+    padding: 4rem 1rem 5rem 2rem;
+    flex: 0 0 50%; }
+    .price__bluebox-item {
+      font-size: 2rem;
+      color: #fff;
+      text-align: right;
+      margin-bottom: 1rem; }
+    .price__bluebox-link {
+      font-size: 2rem;
+      color: #fff; }
+  .price__graybox {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #b3b3b3;
+    padding: 4rem 2rem 5rem 1rem;
+    flex: 1; }
+    .price__graybox-item {
+      font-size: 2rem;
+      color: #fff;
+      text-align: right;
+      margin-bottom: 1rem; }
+    .price__graybox-link {
+      font-size: 2rem;
+      color: #fff; }
+  .price__text-btn {
+    text-align: center; }
+  .price__text {
+    color: #fff;
+    font-size: 2rem;
+    font-weight: 500; }
+  .price__btn {
+    border: 1px solid #fff;
+    color: #fff;
+    background-color: transparent;
+    padding: 2rem 3rem;
+    font-size: 2rem;
+    cursor: pointer; }
+
 .header {
   background-image: url(../pic/hero.jpg);
   max-width: 100vw;
