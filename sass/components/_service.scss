@@ -1,0 +1,42 @@
+.service {
+    &__header {
+        text-align: center;
+        margin-bottom: 5rem;
+        &-main {
+            font-size: 4rem;
+            font-weight: 800;
+            letter-spacing: 1px;
+        }
+
+        &-sub {
+            font-size: 2rem;
+            color: $gray-light-1;
+            word-spacing: 2px;
+        }
+    }
+
+    &__boxes {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__box {
+        border: 1px solid $gray-light-2;
+        width: 35rem;
+        height: 30rem;
+        position: relative;
+
+        &-main {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            text-align: center;
+        }
+
+        &-text {
+            font-size: 1.6rem;
+            font-weight: 900;
+        }
+    }
+}

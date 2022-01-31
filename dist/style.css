@@ -28,7 +28,7 @@ a {
   text-decoration: none; }
 
 .container {
-  width: 108rem;
+  max-width: 108rem;
   margin: auto; }
 
 @font-face {
@@ -135,6 +135,37 @@ a {
   .hero__review-user {
     font-size: 1.6rem;
     font-weight: 100; }
+
+.service__header {
+  text-align: center;
+  margin-bottom: 5rem; }
+  .service__header-main {
+    font-size: 4rem;
+    font-weight: 800;
+    letter-spacing: 1px; }
+  .service__header-sub {
+    font-size: 2rem;
+    color: #5e5e5e;
+    word-spacing: 2px; }
+
+.service__boxes {
+  display: flex;
+  justify-content: space-between; }
+
+.service__box {
+  border: 1px solid #b3b3b3;
+  width: 35rem;
+  height: 30rem;
+  position: relative; }
+  .service__box-main {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center; }
+  .service__box-text {
+    font-size: 1.6rem;
+    font-weight: 900; }
 
 .header {
   background-image: url(../pic/hero.jpg);
