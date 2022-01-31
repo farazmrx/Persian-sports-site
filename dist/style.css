@@ -136,36 +136,85 @@ a {
     font-size: 1.6rem;
     font-weight: 100; }
 
-.service__header {
-  text-align: center;
-  margin-bottom: 5rem; }
-  .service__header-main {
-    font-size: 4rem;
-    font-weight: 800;
-    letter-spacing: 1px; }
-  .service__header-sub {
-    font-size: 2rem;
-    color: #5e5e5e;
-    word-spacing: 2px; }
+.service {
+  margin-bottom: 3rem; }
+  .service__header {
+    text-align: center;
+    margin-bottom: 5rem; }
+    .service__header-main {
+      font-size: 4rem;
+      font-weight: 800;
+      letter-spacing: 1px; }
+    .service__header-sub {
+      font-size: 2rem;
+      color: #5e5e5e;
+      word-spacing: 2px; }
+  .service__boxes {
+    display: flex;
+    justify-content: space-between; }
+  .service__box {
+    border: 1px solid #b3b3b3;
+    width: 35rem;
+    height: 30rem;
+    position: relative; }
+    .service__box-main {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      text-align: center; }
+    .service__box-text {
+      font-size: 1.6rem;
+      font-weight: 900; }
 
-.service__boxes {
-  display: flex;
-  justify-content: space-between; }
-
-.service__box {
-  border: 1px solid #b3b3b3;
-  width: 35rem;
-  height: 30rem;
-  position: relative; }
-  .service__box-main {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+.team {
+  background-color: #dfdfdf;
+  padding: 6rem 0; }
+  .team__header {
+    text-align: center;
+    margin-bottom: 3rem; }
+    .team__header-main {
+      font-size: 4rem;
+      font-weight: 800;
+      letter-spacing: 1px; }
+    .team__header-sub {
+      font-size: 2rem;
+      color: #5e5e5e;
+      word-spacing: 2px; }
+  .team__boxes {
+    display: flex;
+    justify-content: space-between; }
+  .team__box {
+    width: 35rem;
+    background-color: #fff;
     text-align: center; }
-  .service__box-text {
-    font-size: 1.6rem;
-    font-weight: 900; }
+    .team__box-user {
+      border-radius: 100px;
+      width: 8rem;
+      box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.4);
+      position: relative;
+      margin-top: -5rem; }
+    .team__box-image img {
+      width: 100%; }
+    .team__box-text {
+      padding: 4rem 0 6rem 0; }
+      .team__box-text h2 {
+        font-size: 2rem; }
+      .team__box-text p {
+        font-size: 1.2rem;
+        color: #5e5e5e; }
+    .team__box-btn {
+      background-color: #fff;
+      color: #00A8FF;
+      border: 1px solid #00A8FF;
+      padding: 1.4rem 4rem;
+      font-size: 2rem;
+      transition: all .4s;
+      cursor: pointer;
+      margin-bottom: 2.5rem; }
+      .team__box-btn:hover {
+        background-color: #00A8FF;
+        color: #fff; }
 
 .header {
   background-image: url(../pic/hero.jpg);

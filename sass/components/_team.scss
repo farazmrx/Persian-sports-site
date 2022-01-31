@@ -1,0 +1,74 @@
+.team {
+    background-color: $gray-light-3;
+    padding: 6rem 0;
+    &__header {
+        text-align: center;
+        margin-bottom: 3rem;
+
+
+        &-main {
+            font-size: 4rem;
+            font-weight: 800;
+            letter-spacing: 1px;
+        }
+
+        &-sub {
+            font-size: 2rem;
+            color: $gray-light-1;
+            word-spacing: 2px;
+        }
+    }
+
+    &__boxes {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__box {
+        width: 35rem;
+        background-color: $white-color;
+        text-align: center;
+
+        &-user {
+            border-radius: 100px;
+            width: 8rem;
+            box-shadow: 0 1rem 2rem rgba($color: #000000, $alpha: .4);
+            position: relative;
+            margin-top: -5rem;
+        }
+
+        &-image {
+            img {
+                width: 100%;
+            }
+        }
+
+        &-text {
+            padding: 4rem 0 6rem 0;
+            h2 {
+                font-size: 2rem;
+            }
+
+            p{
+                font-size: 1.2rem;
+                color: $gray-light-1;
+            }
+        }
+
+        &-btn {
+            background-color: $white-color;
+            color: $blue-color;
+            border: 1px solid $blue-color;
+            padding: 1.4rem 4rem;
+            font-size: 2rem;
+            transition: all .4s;
+            cursor: pointer;
+            margin-bottom: 2.5rem;
+
+            &:hover {
+                background-color: $blue-color;
+                color: $white-color;
+            }
+        }
+    }
+}
