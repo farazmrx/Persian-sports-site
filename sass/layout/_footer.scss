@@ -1,0 +1,91 @@
+.footer {
+    background-image: url(../pic/footer.jpg);
+    background-position: center;
+    background-size: cover;
+    padding: 6rem 0 2rem 0;
+    color: $white-color;
+
+    &__boxes {
+        display: flex;
+        // justify-content: space-around;
+        text-align: right;
+        margin-bottom: 15rem;
+    }
+
+    &__reservation {
+        flex: 0 0 50%;
+        &-header {
+            font-size: 3rem;
+            margin-bottom: .6rem;
+        }
+        &-paragraph {
+            font-size: 1.8rem;
+            color: $gray-light-2;
+        }
+        &-btn {
+            margin-top: 7rem;
+            background-color: $blue-color;
+            border: none;
+            color: $white-color;
+            font-size: 2rem;
+            padding: 2rem 5rem;
+            cursor: pointer;
+        }
+    }
+
+    &__time {
+        flex: 1;
+        &-header {
+            font-size: 3rem;
+            margin-bottom: 2rem;
+            display: inline-block;
+            position: relative;
+
+            &::before {
+                content: "";
+                position: absolute;
+                left: -4rem;
+                top: 2rem;
+                width: 1.6rem;
+                height: 1.6rem;
+                border-radius: 100px;
+                background-color: $green-color;
+                animation: pulse 1s infinite;
+            }
+        }
+        &-boxes {
+            display: flex;
+            justify-content: end;
+            div{
+                text-align: center;
+                &:not(:last-child) {
+                    margin-right: 4rem;
+                }
+            }
+        }
+        &-day {
+            color: $gray-light-2;
+            font-size: 1.5rem;
+        }
+        &-time {
+            font-size: 2rem;
+        }
+    }
+
+    &__copyright {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    &__social {
+        font-size: 3rem;
+        i {
+            cursor: pointer;
+        }
+    }
+
+    &__text {
+        font-size: 2rem;
+    }
+}

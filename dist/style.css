@@ -5,6 +5,14 @@
   100% {
     opacity: 1; } }
 
+@keyframes pulse {
+  0% {
+    box-shadow: #1eaa02 0 0 0 0; }
+  50% {
+    box-shadow: rgba(46, 65, 30, 0.8) 0 0 0 1.6rem; }
+  100% {
+    box-shadow: rgba(46, 65, 30, 0.274) 0 0 0 1.6rem; } }
+
 * {
   margin: 0;
   padding: 0; }
@@ -464,6 +472,72 @@ a {
         background-color: #00A8FF;
         animation: wink .5s infinite;
         animation-direction: alternate-reverse; }
+
+.footer {
+  background-image: url(../pic/footer.jpg);
+  background-position: center;
+  background-size: cover;
+  padding: 6rem 0 2rem 0;
+  color: #fff; }
+  .footer__boxes {
+    display: flex;
+    text-align: right;
+    margin-bottom: 15rem; }
+  .footer__reservation {
+    flex: 0 0 50%; }
+    .footer__reservation-header {
+      font-size: 3rem;
+      margin-bottom: .6rem; }
+    .footer__reservation-paragraph {
+      font-size: 1.8rem;
+      color: #b3b3b3; }
+    .footer__reservation-btn {
+      margin-top: 7rem;
+      background-color: #00A8FF;
+      border: none;
+      color: #fff;
+      font-size: 2rem;
+      padding: 2rem 5rem;
+      cursor: pointer; }
+  .footer__time {
+    flex: 1; }
+    .footer__time-header {
+      font-size: 3rem;
+      margin-bottom: 2rem;
+      display: inline-block;
+      position: relative; }
+      .footer__time-header::before {
+        content: "";
+        position: absolute;
+        left: -4rem;
+        top: 2rem;
+        width: 1.6rem;
+        height: 1.6rem;
+        border-radius: 100px;
+        background-color: #1eaa02;
+        animation: pulse 1s infinite; }
+    .footer__time-boxes {
+      display: flex;
+      justify-content: end; }
+      .footer__time-boxes div {
+        text-align: center; }
+        .footer__time-boxes div:not(:last-child) {
+          margin-right: 4rem; }
+    .footer__time-day {
+      color: #b3b3b3;
+      font-size: 1.5rem; }
+    .footer__time-time {
+      font-size: 2rem; }
+  .footer__copyright {
+    display: flex;
+    justify-content: space-between;
+    align-items: center; }
+  .footer__social {
+    font-size: 3rem; }
+    .footer__social i {
+      cursor: pointer; }
+  .footer__text {
+    font-size: 2rem; }
 
 /*!
  *  Font Awesome 4.7.0 by @davegandy - http://fontawesome.io - @fontawesome
