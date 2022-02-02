@@ -26,6 +26,7 @@
         width: 35rem;
         height: 30rem;
         position: relative;
+        @include box-shadow;
 
         &-main {
             position: absolute;

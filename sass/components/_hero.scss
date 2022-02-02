@@ -14,6 +14,7 @@
         transform: translate(0 , -50%);
         color: $white-color;
         padding: 2rem 2rem  2.5rem 1rem;
+        @include box-shadow;
     }
 
     &__program {

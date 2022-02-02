@@ -93,7 +93,8 @@ a {
   position: relative;
   transform: translate(0, -50%);
   color: #fff;
-  padding: 2rem 2rem  2.5rem 1rem; }
+  padding: 2rem 2rem  2.5rem 1rem;
+  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.5); }
 
 .hero__program {
   display: flex;
@@ -164,7 +165,8 @@ a {
     border: 1px solid #b3b3b3;
     width: 35rem;
     height: 30rem;
-    position: relative; }
+    position: relative;
+    box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.5); }
     .service__box-main {
       position: absolute;
       top: 50%;
@@ -195,7 +197,8 @@ a {
   .team__box {
     width: 35rem;
     background-color: #fff;
-    text-align: center; }
+    text-align: center;
+    box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.5); }
     .team__box-user {
       border-radius: 100px;
       width: 8rem;

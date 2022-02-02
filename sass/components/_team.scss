@@ -28,6 +28,7 @@
         width: 35rem;
         background-color: $white-color;
         text-align: center;
+        @include box-shadow;
 
         &-user {
             border-radius: 100px;
