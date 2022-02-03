@@ -6,19 +6,25 @@
         &-main {
             font-size: 4rem;
             font-weight: 800;
-            letter-spacing: 1px;
         }
 
         &-sub {
             font-size: 2rem;
             color: $gray-light-1;
-            word-spacing: 2px;
+            word-spacing: 1px;
         }
     }
 
     &__boxes {
         display: flex;
         justify-content: space-between;
+        @include respond(tablet) {
+            justify-content: space-around;
+        }
+        @include respond(smallphone) {
+            flex-direction: column;
+            align-items: center;
+        }
     }
 
     &__box {
@@ -27,6 +33,24 @@
         height: 30rem;
         position: relative;
         @include box-shadow;
+        @include respond(tablet) {
+            width: 30rem;
+            height: 25rem;
+        }
+        @include respond(smallphone) {
+            width: 80%;
+            height: 50rem;
+            margin-bottom: 10rem 0;
+        }
+
+        &-icon {
+            @include respond(tablet) {
+                width: 4rem;
+            }
+            @include respond(smallphone) {
+                width: 8rem;
+            }
+        }
 
         &-main {
             position: absolute;
@@ -39,6 +63,9 @@
         &-text {
             font-size: 1.6rem;
             font-weight: 900;
+            @include respond(smallphone) {
+                font-size: 3rem;
+            }
         }
     }
 }

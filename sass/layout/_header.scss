@@ -6,10 +6,19 @@
     padding-top: 4rem;
     position: relative;
 
+    &__logo-img {
+        @include respond(tablet) {
+            width: 5rem;
+        }
+    }
+
     &__menu {
         display: flex;
         justify-content: space-between;
         align-items: center;
+        @include respond(tablet) {
+            justify-content: space-around;
+        }
     }
 
     &__list {
@@ -70,12 +79,21 @@
         &-main {
             font-size: 4rem;
             position: relative;
+            @include respond(big-desktop) {
+                font-size: 3.6rem;
+            }
+            @include respond(tablet) {
+                font-size: 2.8rem;
+            }
+            @include respond(smallphone) {
+                font-size: 2.4rem;
+            }
             &::after {
                 content: "";
                 position: absolute;
                 left: -.8rem;
                 top: 0;
-                width: 5px;
+                width: .5rem;
                 height: 90%;
                 background-color: $blue-color;
                 animation: wink .5s infinite;

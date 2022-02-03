@@ -11,7 +11,31 @@
 
 html{
     box-sizing: border-box;
-    font-size: 62.5%;//10px
+    font-size: 62.5%;//1rem = 10px
+
+    @include respond(big-desktop) {
+        font-size: 100%; //1rem = 16px
+    }
+
+    @include respond(Desktop) {
+        font-size: 50%; //1rem = 8px
+    }
+
+    @include respond(laptop) {
+        font-size: 43.75%; //1rem = 7px
+    }
+
+    @include respond(tablet) {
+        font-size: 37.5%; //1rem = 6px
+    }
+
+    @include respond(phone) {
+        font-size: 31.25%; //1rem = 5px
+    }
+
+    @include respond(smallphone) {
+        font-size: 25%; //1rem = 4px
+    }
 }
 
 body {

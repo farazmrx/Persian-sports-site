@@ -9,19 +9,24 @@
         &-main {
             font-size: 4rem;
             font-weight: 800;
-            letter-spacing: 1px;
         }
 
         &-sub {
             font-size: 2rem;
             color: $gray-light-1;
-            word-spacing: 2px;
         }
     }
 
     &__boxes {
         display: flex;
         justify-content: space-between;
+        @include respond(tablet) {
+            justify-content: space-around;
+        }
+        @include respond(smallphone) {
+            flex-direction: column;
+            align-items: center;
+        }
     }
 
     &__box {
@@ -29,6 +34,13 @@
         background-color: $white-color;
         text-align: center;
         @include box-shadow;
+        @include respond(tablet) {
+            width: 30rem;
+        }
+        @include respond(smallphone) {
+            width: 80%;
+            margin: 5rem 0;
+        }
 
         &-user {
             border-radius: 100px;
@@ -48,11 +60,17 @@
             padding: 4rem 0 6rem 0;
             h2 {
                 font-size: 2rem;
+                @include respond(smallphone) {
+                    font-size: 4rem;
+                }
             }
 
             p{
                 font-size: 1.2rem;
                 color: $gray-light-1;
+                @include respond(smallphone) {
+                    font-size: 2.5rem;
+                }
             }
         }
 
@@ -65,6 +83,10 @@
             transition: all .4s;
             cursor: pointer;
             margin-bottom: 2.5rem;
+            @include respond(smallphone) {
+                padding: 2rem 4.5rem;
+                font-size: 3rem;
+            }
 
             &:hover {
                 background-color: $blue-color;

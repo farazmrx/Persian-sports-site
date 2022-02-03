@@ -1,8 +1,18 @@
 .hero {
-    
+    @include respond(smallphone) {
+        margin-bottom: 7rem;
+    }
     &__container {
         display: flex;
         justify-content: space-between;
+        @include respond(tablet) {
+            justify-content: space-around;
+        }
+
+        @include respond(smallphone) {
+            flex-direction: column;
+            align-items: center;
+        }
     }
 
     &__box {
@@ -15,6 +25,17 @@
         color: $white-color;
         padding: 2rem 2rem  2.5rem 1rem;
         @include box-shadow;
+        @include respond(tablet) {
+            width: 30rem;
+            height: 25rem;
+        }
+        @include respond(smallphone) {
+            transform: translate(0 , 0);
+            width: 80%;
+            height: 55rem;
+            margin: 2rem 0;
+            padding: 3rem 3rem 4rem 2rem;
+        }
     }
 
     &__program {
@@ -28,6 +49,13 @@
         &-header{
             flex: 0 0 50%;
             font-size: 1.8rem;
+            @include respond(tablet) {
+                flex: 0 0 40%;
+            }
+            @include respond(smallphone) {
+                flex: 0 0 60%;
+                font-size: 4rem;
+            }
         }
 
         &-date {
@@ -41,6 +69,9 @@
             align-items: center;
             margin-bottom: 1.5rem;
             padding-bottom: 1.5rem;
+            @include respond(smallphone) {
+                font-size: 2rem;
+            }
             &:not(:last-child) {
                 border-bottom: 1px solid $white-color;
             }
@@ -57,11 +88,19 @@
 
         &-header {
             flex: 0 0 75%;
+            @include respond(smallphone) {
+                flex: 40%;
+                font-size: 4rem;
+            }
         }
 
         &-paragraph {
             flex: 1;
             font-size: 2.2rem;
+            @include respond(smallphone) {
+                font-size: 5rem;
+                word-spacing: 1px;
+            }
         }
     }
 
@@ -73,14 +112,29 @@
         background-position: center;
         background-size: cover;
 
+        &-header {
+            @include respond(smallphone) {
+                font-size: 4rem;
+            }
+        }
+
         &-paragraph {
             font-size: 2.3rem;
             font-weight: 900;
+            @include respond(tablet) {
+                font-size: 2rem;
+            }
+            @include respond(smallphone) {
+                font-size: 4.5rem;
+            }
         }
 
         &-user {
             font-size: 1.6rem;
             font-weight: 100;
+            @include respond(smallphone) {
+                font-size: 3rem;
+            }
         }
     }
 }
