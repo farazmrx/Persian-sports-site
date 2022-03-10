@@ -1,0 +1,6 @@
+.header {
+    grid-column: center-start / center-end;
+    grid-row: 1 / 2;
+    background-color: red;
+    z-index: 10;
+}
