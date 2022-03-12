@@ -29,7 +29,7 @@ a {
 
 .container {
   display: grid;
-  grid-template-rows: 5rem calc(100vh - 5rem) repeat(6, min-content);
+  grid-template-rows: 5rem calc(150vh - 5rem) repeat(6, min-content);
   grid-template-columns: [full-start] minmax(6rem, 1fr) [center-start] repeat(12, [col-start] minmax(min-content, 9.5rem) [col-end]) [center-end] minmax(6rem, 1fr) [full-end]; }
 
 .u-mb-smaller {
@@ -98,7 +98,7 @@ a {
   position: relative; }
   .hero__content {
     position: absolute;
-    top: 50%;
+    top: 37%;
     left: 50%;
     transform: translate(-50%, -50%);
     text-align: center;
@@ -138,7 +138,8 @@ a {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
     justify-items: center;
-    grid-gap: 2rem; }
+    grid-gap: 2rem;
+    transform: translate(0, -50%); }
   .suggestions__program-group {
     display: flex;
     justify-content: space-between;
