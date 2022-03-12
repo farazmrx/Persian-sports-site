@@ -1,4 +1,42 @@
 .team {
     grid-column: full-start / full-end;
-    background-color: olive;
+    background-color: $gray-light-3;
+    padding: 5rem 0;
+
+    display: grid;
+    grid-template-columns: [full-start] minmax(6rem, 1fr) [center-start] repeat(12, [col-start] minmax(min-content, 9.5rem) [col-end] ) [center-end] minmax(6rem, 1fr) [full-end];
+
+    &__header {
+        grid-column: full-start / full-end;
+    }
+
+    &__boxes {
+        grid-column: center-start / center-end;
+
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+        justify-items: center;
+        grid-gap: 2rem;
+    }
+
+    &__box {
+        background-color: $white-color;
+        width: 100%;
+        padding-bottom: 4rem;
+
+        &--img {
+            img {
+                width: 100%;
+            }
+        }
+
+        &--content {
+            img {
+                border-radius: 100px;
+                transform: translate(0, -55%);
+                width: 10rem;
+                height: 10rem;
+            }
+        }
+    }
 }

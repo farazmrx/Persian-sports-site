@@ -1,0 +1,11 @@
+.btn {
+    padding: 1.5rem 3rem;
+    border-radius: 10px;
+    font-size: 2rem;
+
+    &--blue {
+        background-color: $white-color;
+        color: $blue-color;
+        border: 1px solid $blue-color;
+    }
+}
