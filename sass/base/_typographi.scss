@@ -1,0 +1,19 @@
+.heading {
+    &__primery {
+        font-size: 3rem;
+        font-weight: 900;
+    }
+
+    &__secondary {
+        font-size: 1.6rem;
+        font-weight: 900;
+    }
+}
+
+.paragraph {
+    &__primery {
+        font-size: 1.6rem;
+        font-weight: 500;
+        color: $gray-light-1;
+    }
+}
