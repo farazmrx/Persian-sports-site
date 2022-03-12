@@ -47,6 +47,11 @@
             font-weight: 900;
         }
 
+        &--customer {
+            font-size: 1.3rem;
+            font-style: italic;
+        }
+
         &--1 {
             background: linear-gradient(rgba(red, .55), rgba(red, .55)),url(../img/thumb3.jpg);
         }
@@ -56,7 +61,7 @@
         }
 
         &--3 {
-            background-color: red;
+            background: linear-gradient(rgba($blue-color, .55), rgba($blue-color, .55)),url(../img/thumb1.jpg);
         }
     }
 }
