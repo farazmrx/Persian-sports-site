@@ -133,7 +133,47 @@ a {
 
 .suggestions {
   grid-column: center-start / center-end;
-  background-color: aqua; }
+  background-color: aqua;
+  margin-bottom: 10rem; }
+  .suggestions__boxes {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+    justify-items: center;
+    grid-gap: 2rem; }
+  .suggestions__program-group {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 0; }
+    .suggestions__program-group:not(:last-child) {
+      border-bottom: 1px solid #fff; }
+  .suggestions__box {
+    width: 100%;
+    height: 35rem;
+    padding: 2rem;
+    text-align: right;
+    color: #fff; }
+    .suggestions__box--header {
+      font-size: 2rem; }
+    .suggestions__box--1 {
+      background: linear-gradient(rgba(255, 0, 0, 0.55), rgba(255, 0, 0, 0.55)), url(../img/thumb3.jpg);
+      background-size: cover;
+      background-position: center;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between; }
+    .suggestions__box--2 {
+      background-color: red; }
+    .suggestions__box--3 {
+      background-color: red; }
+
+.program__group-title {
+  font-size: 1.6rem;
+  font-weight: 500; }
+
+.program__group-time {
+  font-size: 1.6rem;
+  font-weight: 100; }
 
 .team {
   grid-column: full-start / full-end;
