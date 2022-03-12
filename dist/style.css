@@ -250,7 +250,11 @@ a {
   .btn--blue {
     background-color: #fff;
     color: #00A8FF;
-    border: 1px solid #00A8FF; }
+    border: 1px solid #00A8FF;
+    transition: all .5s ease-in; }
+    .btn--blue:hover {
+      background-color: #00A8FF;
+      color: #fff; }
 
 .header {
   grid-column: center-start / center-end;
