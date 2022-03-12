@@ -1,6 +1,5 @@
 .suggestions {
     grid-column: center-start / center-end;
-    background-color: aqua;
     margin-bottom: 10rem;
 
     &__boxes {
@@ -33,23 +32,27 @@
         padding: 2rem;
         text-align: right;
         color: $white-color;
+        background-size: cover;
+        background-position: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
 
         &--header {
             font-size: 2rem;
         }
 
+        &--paragraph {
+            font-size: 2.4rem;
+            font-weight: 900;
+        }
+
         &--1 {
             background: linear-gradient(rgba(red, .55), rgba(red, .55)),url(../img/thumb3.jpg);
-            background-size: cover;
-            background-position: center;
-            display: flex;
-            flex-direction: column;
-            justify-content: space-between;
-
         }
 
         &--2 {
-            background-color: red;
+            background: linear-gradient(rgba(green, .55), rgba(green, .55)),url(../img/thumb2.jpg);
         }
 
         &--3 {

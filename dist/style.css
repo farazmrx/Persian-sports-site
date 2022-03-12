@@ -133,7 +133,6 @@ a {
 
 .suggestions {
   grid-column: center-start / center-end;
-  background-color: aqua;
   margin-bottom: 10rem; }
   .suggestions__boxes {
     display: grid;
@@ -152,18 +151,21 @@ a {
     height: 35rem;
     padding: 2rem;
     text-align: right;
-    color: #fff; }
+    color: #fff;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; }
     .suggestions__box--header {
       font-size: 2rem; }
+    .suggestions__box--paragraph {
+      font-size: 2.4rem;
+      font-weight: 900; }
     .suggestions__box--1 {
-      background: linear-gradient(rgba(255, 0, 0, 0.55), rgba(255, 0, 0, 0.55)), url(../img/thumb3.jpg);
-      background-size: cover;
-      background-position: center;
-      display: flex;
-      flex-direction: column;
-      justify-content: space-between; }
+      background: linear-gradient(rgba(255, 0, 0, 0.55), rgba(255, 0, 0, 0.55)), url(../img/thumb3.jpg); }
     .suggestions__box--2 {
-      background-color: red; }
+      background: linear-gradient(rgba(0, 128, 0, 0.55), rgba(0, 128, 0, 0.55)), url(../img/thumb2.jpg); }
     .suggestions__box--3 {
       background-color: red; }
 
