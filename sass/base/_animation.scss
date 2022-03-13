@@ -7,3 +7,15 @@
         opacity: 1;
     }
 }
+
+@keyframes pulse {
+    0% {
+        box-shadow: $green-color 0 0 0 0;
+    }
+    50%{
+        box-shadow: rgba(46, 65, 30, 0.8) 0 0 0 1.6rem;
+    }
+    100% {
+        box-shadow: rgba(46, 65, 30, 0.274) 0 0 0 1.6rem;
+    }
+}

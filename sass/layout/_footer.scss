@@ -3,29 +3,73 @@
     background-image: url(../img/footer.jpg);
     background-size: cover;
     background-position: center;
-    padding: 7rem 0 5rem 0;
+    padding: 7rem 0 2rem 0;
     
     display: grid;
     grid-template-rows: repeat(3, min-content);
     grid-template-columns: [full-start] minmax(6rem, 1fr) [center-start] repeat(12, [col-start] minmax(min-content, 9.5rem) [col-end] ) [center-end] minmax(6rem, 1fr) [full-end];
 
     &__time {
-        background-color: red;
         grid-column: col-start 2 / col-end 6;
+        text-align: right;
+
+        &--header {
+            font-size: 3rem;
+            font-weight: 900;
+            color: $white-color;
+            position: relative;
+            display: inline-block;
+
+            &::before {
+                content: "";
+                position: absolute;
+                left: -4rem;
+                top: 2rem;
+                width: 1.6rem;
+                height: 1.6rem;
+                border-radius: 100px;
+                background-color: $green-color;
+                animation: pulse 1s infinite;
+            }
+        }
+
+        div {
+            display: flex;
+            justify-content: space-between;
+        }
     }
 
     &__header {
-        background-color: green;
         grid-column: col-start 8 / center-end;
+        text-align: right;
     }
 
     &__btn {
-        background-color: yellow;
         grid-column: col-start 10 / center-end;
+        text-align: right;
+        margin-bottom: 15rem;
+        
+        &--button {
+            background-color: $blue-color;
+            color: $white-color;
+            font-size: 2rem;
+            padding: 2rem 4rem;
+        }
     }
 
     &__copyright {
-        background-color: brown;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
         grid-column: center-start / center-end;
+
+        &--social {
+            font-size: 3rem;
+            cursor: pointer;
+
+            a {
+                color: $white-color;
+            }
+        }
     }
 }
