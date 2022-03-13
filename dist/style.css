@@ -53,6 +53,14 @@ a {
 .heading__primery {
   font-size: 3rem;
   font-weight: 900; }
+  .heading__primery--white {
+    font-size: 3rem;
+    font-weight: 900;
+    color: #fff; }
+    .heading__primery--white-1 {
+      font-size: 2rem;
+      font-weight: 900;
+      color: #fff; }
 
 .heading__secondary {
   font-size: 1.6rem;
@@ -62,6 +70,10 @@ a {
   font-size: 1.6rem;
   font-weight: 500;
   color: #5e5e5e; }
+  .paragraph__primery--white {
+    font-size: 1.6rem;
+    font-weight: 500;
+    color: #fff; }
 
 @font-face {
   font-family: Vazir;
@@ -137,7 +149,38 @@ a {
 
 .price {
   grid-column: full-start / full-end;
-  background-color: orangered; }
+  background-image: url(../img/price.jpg);
+  background-size: cover;
+  background-position: center;
+  padding: 5rem 0 15rem 0;
+  display: grid;
+  grid-template-columns: [full-start] minmax(6rem, 1fr) [center-start] repeat(12, [col-start] minmax(min-content, 9.5rem) [col-end]) [center-end] minmax(6rem, 1fr) [full-end]; }
+  .price__header {
+    grid-column: full-start / full-end; }
+  .price__boxes {
+    grid-column: col-start 2/ col-end 11;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(40rem, 1fr));
+    justify-items: center; }
+  .price__box {
+    width: 100%;
+    padding: 6rem 2rem;
+    color: #fff; }
+    .price__box--1 {
+      background-color: #00A8FF; }
+    .price__box--2 {
+      background-color: #b3b3b3; }
+    .price__box--content {
+      display: flex;
+      justify-content: space-between;
+      align-items: center; }
+      .price__box--content div {
+        text-align: center; }
+    .price__box--list {
+      text-align: right;
+      font-size: 1.5rem; }
+    .price__box--item:not(:last-child) {
+      margin-bottom: 1rem; }
 
 .service {
   grid-column: full-start / full-end;
@@ -255,6 +298,11 @@ a {
     .btn--blue:hover {
       background-color: #00A8FF;
       color: #fff; }
+  .btn--white {
+    color: #fff;
+    font-size: 1.6rem;
+    padding: 1rem 3rem;
+    border: 1px solid #fff; }
 
 .header {
   grid-column: center-start / center-end;

@@ -1,4 +1,56 @@
 .price {
     grid-column: full-start / full-end;
-    background-color: orangered;
+    background-image: url(../img/price.jpg);
+    background-size: cover;
+    background-position: center;
+    padding: 5rem 0 15rem 0;
+
+    display: grid;
+    grid-template-columns: [full-start] minmax(6rem, 1fr) [center-start] repeat(12, [col-start] minmax(min-content, 9.5rem) [col-end] ) [center-end] minmax(6rem, 1fr) [full-end];
+
+    &__header {
+        grid-column: full-start / full-end;
+    }
+
+    &__boxes {
+        grid-column: col-start 2/ col-end 11;
+
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(40rem, 1fr));
+        justify-items: center;
+    }
+
+    &__box {
+        width: 100%;
+        padding: 6rem 2rem;
+        color: $white-color;
+        &--1 {
+            background-color: $blue-color;
+        }
+
+        &--2 {
+            background-color: $gray-light-2;
+        }
+
+        &--content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            div {
+                text-align: center;
+            }
+        }
+
+        &--list {
+            text-align: right;
+            font-size: 1.5rem;
+        }
+
+        &--item {
+            &:not(:last-child) {
+                margin-bottom: 1rem;
+            }
+        }
+    }
 }
