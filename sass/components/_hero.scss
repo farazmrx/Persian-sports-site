@@ -13,20 +13,22 @@
         transform: translate(-50%, -50%);
         text-align: center;
         color: $white-color;
+        width: 100%;
         &--sub {
             font-size: 1.6rem;
+
+            @include respond(tablet) {
+                font-size: 1.2rem;
+            }
         }
 
         &--main {
-            font-size: 3.8rem;
+            font-size: 4rem;
             position: relative;
+            display: inline-block;
 
-            @include respond(Desktop) {
-                font-size: 3.5rem;
-            }
-
-            @include respond(laptop) {
-                font-size: 3.2rem;
+            @include respond(tablet) {
+                font-size: 3rem;
             }
 
             &::after {

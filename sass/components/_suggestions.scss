@@ -7,6 +7,10 @@
         justify-items: center;
         grid-gap: 2rem;
         transform: translate(0, -50%);
+
+        @include respond(tablet) {
+            transform: translate(0, 0);
+        }
     }
 
     &__program {

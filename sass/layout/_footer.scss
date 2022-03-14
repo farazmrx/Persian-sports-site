@@ -13,6 +13,10 @@
         grid-column: col-start 2 / col-end 6;
         text-align: right;
 
+        @include respond(tablet) {
+            grid-column: center-start / col-end 4;
+        }
+
         &--header {
             font-size: 3rem;
             font-weight: 900;
@@ -20,11 +24,16 @@
             position: relative;
             display: inline-block;
 
+            @include respond(tablet) {
+                font-size: 2rem;
+            }
+
             &::before {
                 content: "";
                 position: absolute;
                 left: -4rem;
-                top: 2rem;
+                top: 50%;
+                transform: translate(0, -50%);
                 width: 1.6rem;
                 height: 1.6rem;
                 border-radius: 100px;
@@ -42,18 +51,31 @@
     &__header {
         grid-column: col-start 8 / center-end;
         text-align: right;
+
+        @include respond(tablet) {
+            grid-column: col-start 7 / center-end;
+        }
     }
 
     &__btn {
         grid-column: col-start 10 / center-end;
         text-align: right;
         margin-bottom: 15rem;
+
+        @include respond(tablet) {
+            grid-column: col-start 8 / center-end;
+        }
         
         &--button {
             background-color: $blue-color;
             color: $white-color;
             font-size: 2rem;
             padding: 2rem 4rem;
+
+            @include respond(tablet) {
+                font-size: 1.6rem;
+                padding: 1.5rem 3rem;
+            }
         }
     }
 
@@ -66,6 +88,10 @@
         &--social {
             font-size: 3rem;
             cursor: pointer;
+
+            @include respond(tablet) {
+                font-size: 2rem;
+            }
 
             a {
                 color: $white-color;
