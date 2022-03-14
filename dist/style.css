@@ -171,6 +171,9 @@ a {
     .hero__content--main {
       font-size: 3.8rem;
       position: relative; }
+      @media (max-width: 75em) {
+        .hero__content--main {
+          font-size: 3.5rem; } }
       .hero__content--main::after {
         content: "";
         position: absolute;

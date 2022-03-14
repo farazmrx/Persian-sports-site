@@ -21,6 +21,10 @@
             font-size: 3.8rem;
             position: relative;
 
+            @include respond(Desktop) {
+                font-size: 3.5rem;
+            }
+
             &::after {
                 content: "";
                 position: absolute;

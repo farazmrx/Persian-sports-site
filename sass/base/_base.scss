@@ -14,8 +14,12 @@ html{
     font-size: 62.5%;//1rem = 10px
 
     @include respond(big-desktop) {
-        font-size: 100%;
+        font-size: 100%;//1rem = 16px
     }
+
+    // @include respond(laptop) {
+    //     font-size: 50%; //1rem = 8px
+    // }
 }
 
 body {
