@@ -192,6 +192,9 @@ a {
       @media (max-width: 48em) {
         .hero__content--main {
           font-size: 3rem; } }
+      @media (max-width: 31.25em) {
+        .hero__content--main {
+          font-size: 2.5rem; } }
       .hero__content--main::after {
         content: "";
         position: absolute;
@@ -218,6 +221,9 @@ a {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(40rem, 1fr));
     justify-items: center; }
+    @media (max-width: 31.25em) {
+      .price__boxes {
+        grid-column: full-start / full-end; } }
   .price__box {
     width: 100%;
     padding: 6rem 2rem;
@@ -519,12 +525,18 @@ a {
   display: grid;
   grid-template-rows: repeat(3, min-content);
   grid-template-columns: [full-start] minmax(6rem, 1fr) [center-start] repeat(12, [col-start] minmax(min-content, 9.5rem) [col-end]) [center-end] minmax(6rem, 1fr) [full-end]; }
+  @media (max-width: 31.25em) {
+    .footer {
+      grid-template-rows: repeat(4, min-content); } }
   .footer__time {
     grid-column: col-start 2 / col-end 6;
     text-align: right; }
     @media (max-width: 48em) {
       .footer__time {
         grid-column: center-start / col-end 4; } }
+    @media (max-width: 31.25em) {
+      .footer__time {
+        grid-column: center-start / center-end; } }
     .footer__time--header {
       font-size: 3rem;
       font-weight: 900;
@@ -554,6 +566,9 @@ a {
     @media (max-width: 48em) {
       .footer__header {
         grid-column: col-start 7 / center-end; } }
+    @media (max-width: 31.25em) {
+      .footer__header {
+        grid-column: center-start / center-end; } }
   .footer__btn {
     grid-column: col-start 10 / center-end;
     text-align: right;
@@ -561,6 +576,10 @@ a {
     @media (max-width: 48em) {
       .footer__btn {
         grid-column: col-start 8 / center-end; } }
+    @media (max-width: 31.25em) {
+      .footer__btn {
+        grid-column: center-start / center-end;
+        margin-top: 4rem; } }
     .footer__btn--button {
       background-color: #00A8FF;
       color: #fff;
@@ -575,6 +594,9 @@ a {
     justify-content: space-between;
     align-items: center;
     grid-column: center-start / center-end; }
+    @media (max-width: 31.25em) {
+      .footer__copyright {
+        grid-column: full-start / full-end; } }
     .footer__copyright--social {
       font-size: 3rem;
       cursor: pointer; }

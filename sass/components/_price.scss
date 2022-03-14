@@ -18,6 +18,10 @@
         display: grid;
         grid-template-columns: repeat(auto-fit, minmax(40rem, 1fr));
         justify-items: center;
+
+        @include respond(phone) {
+            grid-column: full-start / full-end;
+        }
     }
 
     &__box {
