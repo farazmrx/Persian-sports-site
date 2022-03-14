@@ -17,9 +17,9 @@ html{
         font-size: 100%;//1rem = 16px
     }
 
-    // @include respond(laptop) {
-    //     font-size: 50%; //1rem = 8px
-    // }
+    @include respond(laptop) {
+        font-size: 50%; //1rem = 8px
+    }
 }
 
 body {

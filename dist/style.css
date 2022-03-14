@@ -47,6 +47,9 @@ html {
   @media (min-width: 112.5em) {
     html {
       font-size: 100%; } }
+  @media (max-width: 64em) {
+    html {
+      font-size: 50%; } }
 
 body {
   font-family: 'vazir'; }
@@ -174,6 +177,9 @@ a {
       @media (max-width: 75em) {
         .hero__content--main {
           font-size: 3.5rem; } }
+      @media (max-width: 64em) {
+        .hero__content--main {
+          font-size: 3.2rem; } }
       .hero__content--main::after {
         content: "";
         position: absolute;
