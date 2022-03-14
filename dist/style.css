@@ -44,6 +44,9 @@ $breakpoint argument choices:
 html {
   box-sizing: border-box;
   font-size: 62.5%; }
+  @media (min-width: 112.5em) {
+    html {
+      font-size: 100%; } }
 
 body {
   font-family: 'vazir'; }
@@ -166,7 +169,7 @@ a {
     .hero__content--sub {
       font-size: 1.6rem; }
     .hero__content--main {
-      font-size: 4rem;
+      font-size: 3.8rem;
       position: relative; }
       .hero__content--main::after {
         content: "";
@@ -365,8 +368,6 @@ a {
     padding: 2rem;
     text-align: right;
     color: #fff;
-    background-size: cover;
-    background-position: center;
     display: flex;
     flex-direction: column;
     justify-content: space-between; }
@@ -379,11 +380,20 @@ a {
       font-size: 1.3rem;
       font-style: italic; }
     .suggestions__box--1 {
-      background: linear-gradient(rgba(255, 0, 0, 0.55), rgba(255, 0, 0, 0.55)), url(../img/thumb3.jpg); }
+      background: linear-gradient(rgba(255, 0, 0, 0.55), rgba(255, 0, 0, 0.55)), url(../img/thumb3.jpg);
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center; }
     .suggestions__box--2 {
-      background: linear-gradient(rgba(0, 128, 0, 0.55), rgba(0, 128, 0, 0.55)), url(../img/thumb2.jpg); }
+      background: linear-gradient(rgba(0, 128, 0, 0.55), rgba(0, 128, 0, 0.55)), url(../img/thumb2.jpg);
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat; }
     .suggestions__box--3 {
-      background: linear-gradient(rgba(0, 168, 255, 0.55), rgba(0, 168, 255, 0.55)), url(../img/thumb1.jpg); }
+      background: linear-gradient(rgba(0, 168, 255, 0.55), rgba(0, 168, 255, 0.55)), url(../img/thumb1.jpg);
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat; }
 
 .program__group-title {
   font-size: 1.6rem;

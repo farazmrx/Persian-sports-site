@@ -12,6 +12,10 @@
 html{
     box-sizing: border-box;
     font-size: 62.5%;//1rem = 10px
+
+    @include respond(big-desktop) {
+        font-size: 100%;
+    }
 }
 
 body {

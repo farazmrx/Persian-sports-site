@@ -28,8 +28,6 @@
         padding: 2rem;
         text-align: right;
         color: $white-color;
-        background-size: cover;
-        background-position: center;
         display: flex;
         flex-direction: column;
         justify-content: space-between;
@@ -50,14 +48,23 @@
 
         &--1 {
             background: linear-gradient(rgba(red, .55), rgba(red, .55)),url(../img/thumb3.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
         }
 
         &--2 {
             background: linear-gradient(rgba(green, .55), rgba(green, .55)),url(../img/thumb2.jpg);
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
         }
 
         &--3 {
             background: linear-gradient(rgba($blue-color, .55), rgba($blue-color, .55)),url(../img/thumb1.jpg);
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
         }
     }
 }
