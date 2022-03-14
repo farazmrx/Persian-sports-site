@@ -19,6 +19,10 @@
         grid-template-columns: repeat(auto-fit, minmax(40rem, 1fr));
         justify-items: center;
 
+        @include respond(smallphone) {
+            grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+        }
+
         @include respond(phone) {
             grid-column: full-start / full-end;
         }
@@ -49,6 +53,10 @@
         &--list {
             text-align: right;
             font-size: 1.5rem;
+
+            @include respond(smallphone) {
+                font-size: 1.2rem;
+            }
         }
 
         &--item {

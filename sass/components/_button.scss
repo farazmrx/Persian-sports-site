@@ -3,6 +3,11 @@
     border-radius: 10px;
     font-size: 2rem;
 
+    @include respond(smallphone) {
+        font-size: 1.6rem;
+        padding: 1rem 2rem;
+    }
+
     &--blue {
         background-color: $white-color;
         color: $blue-color;

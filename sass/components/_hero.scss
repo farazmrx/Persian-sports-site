@@ -20,6 +20,10 @@
             @include respond(tablet) {
                 font-size: 1.2rem;
             }
+
+            @include respond(smallphone) {
+                font-size: 1rem;
+            }
         }
 
         &--main {
@@ -33,6 +37,10 @@
 
             @include respond(phone) {
                 font-size: 2.5rem;
+            }
+
+            @include respond(smallphone) {
+                font-size: 2rem;
             }
 
             &::after {

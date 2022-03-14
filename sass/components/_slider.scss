@@ -28,6 +28,11 @@
     @include respond(tablet) {
       font-size: 3rem;
     }
+
+    @include respond(tablet) {
+      font-size: 2rem;
+      padding: .6rem;
+    }
   }
   
   .next {
@@ -48,6 +53,10 @@
     bottom: .8rem;
     width: 100%;
     text-align: center;
+
+    @include respond(tablet) {
+      font-size: 1.6rem;
+    }
   }
   
   .dot {
@@ -101,20 +110,36 @@
   
   .fa-twitter::before {
     font-size: 3rem;
+
+    @include respond(tablet) {
+      font-size: 2rem;
+    }
   }
   
   .fa-facebook-official::before {
     font-size: 3rem;
+
+    @include respond(tablet) {
+      font-size: 2rem;
+    }
   }
   
   .fa-instagram::before {
     font-size: 3rem;
+
+    @include respond(tablet) {
+      font-size: 2rem;
+    }
   }
   
   .first-slider h2 {
     font-size: 1.8rem;
     margin-top: 6rem;
     margin-bottom: 1rem;
+
+    @include respond(tablet) {
+      font-size: 1.5rem;
+    }
   }
   
   .first-slider span {

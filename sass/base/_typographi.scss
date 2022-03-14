@@ -3,6 +3,10 @@
         font-size: 3rem;
         font-weight: 900;
 
+        @include respond(smallphone) {
+            font-size: 2.5rem;
+        }
+
         &--white {
             font-size: 3rem;
             font-weight: 900;
@@ -12,16 +16,28 @@
                 font-size: 2.5rem;
             }
 
+            @include respond(tablet) {
+                font-size: 2rem;
+            }
+
             &-1 {
                 font-size: 2rem;
                 font-weight: 900;
                 color: $white-color;
+
+                @include respond(smallphone) {
+                    font-size: 1.5rem;
+                }
             }
 
             &-2 {
                 font-size: 3rem;
                 font-weight: 900;
                 color: $white-color;
+
+                @include respond(smallphone) {
+                    font-size: 2rem;
+                }
             }
         }
     }
@@ -38,10 +54,18 @@
         font-weight: 500;
         color: $gray-light-1;
 
+        @include respond(smallphone) {
+            font-size: 1.2rem;
+        }
+
         &--white {
             font-size: 1.6rem;
             font-weight: 500;
             color: $white-color;
+
+            @include respond(smallphone) {
+                font-size: 1rem;
+            }
         }
     }
 
@@ -52,6 +76,10 @@
 
         @include respond(tablet) {
             font-size: 1.6rem;
+        }
+
+        @include respond(smallphone) {
+            font-size: 1.2rem;
         }
     }
 }

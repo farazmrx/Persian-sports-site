@@ -1,6 +1,10 @@
 .suggestions {
     grid-column: center-start / center-end;
 
+    @include respond(smallphone) {
+        grid-column: full-start / full-end;
+    }
+
     &__boxes {
         display: grid;
         grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
