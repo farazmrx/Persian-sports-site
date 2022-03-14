@@ -1,4 +1,23 @@
 @charset "UTF-8";
+/* 
+0 - 500 phone
+501 - 768 ipad, teblet
+769 - 1024 small screen, laptop
+1025 - 1200 large screen, Desktop
+1200 - 1800 is where our normal style apply
+1800px ++ big screen, TV
+*/
+/* 
+$breakpoint argument choices:
+- phone
+- tablet
+- laptop
+- Desktop
+- ourstyle
+- big-desktop
+
+1em = 16px
+*/
 @keyframes wink {
   0% {
     opacity: 0; }
