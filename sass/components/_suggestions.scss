@@ -9,7 +9,7 @@
         display: grid;
         grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
         justify-items: center;
-        grid-gap: 2rem;
+        gap: 2rem;
         transform: translate(0, -50%);
 
         @include respond(tablet) {
