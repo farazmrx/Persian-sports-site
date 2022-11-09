@@ -3,6 +3,10 @@
     grid-row: 1 / 2;
     z-index: 10;
     margin-top: 6rem;
+    
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 
     &__logo {
         @include respond(tablet) {
@@ -14,20 +18,20 @@
         }
     }
 
-    &__menu {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-    }
-
     &__list {
         display: flex;
+        gap: 3rem;
     }
 
     &__item {
-        margin-right: 3rem;
-        font-size: 1.6rem;
         overflow: hidden;
+        padding: 2rem 0;
+    }
+
+    &__link {
+        color: $white-color;
+        position: relative;
+        font-size: 1.6rem;
 
         @include respond(tablet) {
             font-size: 1.2rem;
@@ -36,11 +40,6 @@
         @include respond(smallphone) {
             font-size: 1rem;
         }
-    }
-
-    &__link {
-        color: $white-color;
-        position: relative;
 
         &::after {
             content: "";
@@ -55,6 +54,27 @@
 
         &:hover::after {
             left: 0;
+        }
+
+        &--active {
+            color: $white-color;
+            font-size: 1.6rem;
+            background-color: $blue-color;
+            padding: 1.5rem 2rem;
+            border-radius: 8px;
+            transition: all .5s;
+
+            @include respond(tablet) {
+                font-size: 1.4rem;
+            }
+    
+            @include respond(smallphone) {
+                font-size: 1.2rem;
+            }
+
+            &:hover {
+                background-color: $blue-color-dark;
+            }
         }
     }
 }

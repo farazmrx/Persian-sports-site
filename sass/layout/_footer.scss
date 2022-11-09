@@ -88,6 +88,11 @@
             color: $white-color;
             font-size: 2rem;
             padding: 2rem 4rem;
+            transition: all .4s;
+
+            &:hover {
+                background-color: $blue-color-dark;
+            }
 
             @include respond(tablet) {
                 font-size: 1.6rem;
