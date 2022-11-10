@@ -91,3 +91,10 @@ $('.js--wp-4').waypoint(function(direction) {
   offset: '50%'
 });
 });
+
+const btnMobile = document.querySelector('.btn-mobile-nav');
+const header = document.querySelector('.header');
+
+btnMobile.addEventListener('click', function() {
+  header.classList.toggle('nav-open')
+});
